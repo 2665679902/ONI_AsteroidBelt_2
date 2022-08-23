@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{060BD066-CD8D-4F57-94F6-F9BDE7AD9DE6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ONI_AsteroidBelt_2</RootNamespace>
+    <AssemblyName>ONI_AsteroidBelt_2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\System mirror image\Documents\Klei\OxygenNotIncluded\mods\dev\AsteroidBelt_2\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PLib, Version=4.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\PLib.4.9.0\lib\net471\PLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\UnityEngine.InputModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AsBuilding\HabitatConfigs\ConfigFile.cs" />
+    <Compile Include="AsBuilding\HabitatConfigs\HabitatData.cs" />
+    <Compile Include="AsBuilding\HabitatConfigs\HabitatLoad.cs" />
+    <Compile Include="AsBuilding\HabitatConfigs\Patch.cs" />
+    <Compile Include="AsBuilding\NoseconeConfigs\ConfigFile.cs" />
+    <Compile Include="AsBuilding\NoseconeConfigs\Patch.cs" />
+    <Compile Include="AsCluster\AsClusterConfig.cs" />
+    <Compile Include="AsCluster\BiomeDescribe\BandDescribe\Band.cs" />
+    <Compile Include="AsCluster\BiomeDescribe\BandDescribe\Bands.cs" />
+    <Compile Include="AsCluster\BiomeDescribe\Biome.cs" />
+    <Compile Include="AsCluster\BiomeDescribe\BiomeData.cs" />
+    <Compile Include="AsCluster\BiomeDescribe\BiomePattern\BiomeBehaviorPattern.cs" />
+    <Compile Include="AsCluster\BiomeDescribe\BiomePattern\BiomeLocationPattern.cs" />
+    <Compile Include="AsCluster\BiomeDescribe\BiomeManager.cs" />
+    <Compile Include="AsCluster\BiomeDescribe\ItemsDescribe\Critter.cs" />
+    <Compile Include="AsCluster\BiomeDescribe\ItemsDescribe\Template.cs" />
+    <Compile Include="AsCluster\BiomeDescribe\ItemsDescribe\Things.cs" />
+    <Compile Include="AsCluster\ClusterBuilder\FormateTerrain.cs" />
+    <Compile Include="AsCluster\ClusterBuilder\TerrainActs\BiomeSetter.cs" />
+    <Compile Include="AsCluster\ClusterBuilder\TerrainActs\CellsSeparater.cs" />
+    <Compile Include="AsCluster\ClusterBuilder\TerrainActs\CritterPlacer.cs" />
+    <Compile Include="AsCluster\ClusterBuilder\TerrainActs\NoiseMapper.cs" />
+    <Compile Include="AsCluster\ClusterBuilder\TerrainActs\TempelateMananger.cs" />
+    <Compile Include="AsCluster\ClusterBuilder\TerrainActs\TerrainSetter.cs" />
+    <Compile Include="AsCluster\ClusterBuilder\TerrainActs\WorldBorderManager.cs" />
+    <Compile Include="AsCluster\ClusterBuilder\WorldBuildCatch.cs" />
+    <Compile Include="AsCluster\ClusterDescribe\ClusterData.cs" />
+    <Compile Include="AsCluster\ClusterDescribe\ClusterManager.cs" />
+    <Compile Include="AsCluster\ClusterDescribe\poiData.cs" />
+    <Compile Include="AsCluster\ClusterString\FileStringFormate\ClusterDataFormater.cs" />
+    <Compile Include="AsCluster\ClusterString\FileStringFormate\LoadClusterFile.cs" />
+    <Compile Include="AsCluster\ClusterString\StringPatch\LoadClusterString.cs" />
+    <Compile Include="AsCluster\WorldDescribe\StartWorld.cs" />
+    <Compile Include="AsCluster\WorldDescribe\World.cs" />
+    <Compile Include="AsCluster\WorldDescribe\WorldData.cs" />
+    <Compile Include="AsCluster\WorldDescribe\WorldManager.cs" />
+    <Compile Include="AsData\AssetBundles\AssetBundleManager.cs" />
+    <Compile Include="AsData\BuildingData\HabitatData.cs" />
+    <Compile Include="AsData\CurrentCluster\ClusterInfo.cs" />
+    <Compile Include="AsData\CurrentCluster\ClusterInfoManager.cs" />
+    <Compile Include="AsData\Input\AsKeyEvent.cs" />
+    <Compile Include="AsData\Strings\AsString.cs" />
+    <Compile Include="AsData\Strings\AsStringManager.cs" />
+    <Compile Include="AsData\Strings\AsStrings.cs" />
+    <Compile Include="AsUI\IMGUI\IMGUI_Data\Data.cs" />
+    <Compile Include="AsUI\IMGUI\IMGUI_Data\IMGUI_Skin\DefaultSkin.cs" />
+    <Compile Include="AsUI\IMGUI\IMGUI_Data\IMGUI_Style\Buttons.cs" />
+    <Compile Include="AsUI\IMGUI\IMGUI_Data\IMGUI_Style\TextAreas.cs" />
+    <Compile Include="AsUI\IMGUI\IMGUI_Data\IMGUI_Style\VerticalScrollbarDownButtons.cs" />
+    <Compile Include="AsUI\IMGUI\IMGUI_Data\IMGUI_Style\VerticalScrollbars.cs" />
+    <Compile Include="AsUI\IMGUI\IMGUI_Data\IMGUI_Style\VerticalScrollbarThumb.cs" />
+    <Compile Include="AsUI\IMGUI\IMGUI_Data\IMGUI_Style\VerticalScrollbarUpButtons.cs" />
+    <Compile Include="AsUI\IMGUI\IMGUI_Data\IMGUI_Style\Windows.cs" />
+    <Compile Include="AsUI\IMGUI\IMGUI_Data\Utility.cs" />
+    <Compile Include="AsUI\IMGUI\IMGUI_LogUI\LogUI.cs" />
+    <Compile Include="AsUI\PLibUI\PLibMenu.cs" />
+    <Compile Include="AsUI\UGUI\SelectWorldUI\Data\WorldDiscribe.cs" />
+    <Compile Include="AsUI\UGUI\SelectWorldUI\SelectWorldUIBuilder.cs" />
+    <Compile Include="AsUI\UGUI\SelectWorldUI\States\MainMenuState.cs" />
+    <Compile Include="AsUI\UGUI\SelectWorldUI\States\StartNewState.cs" />
+    <Compile Include="AsUI\UGUI\SelectWorldUI\ViewModel\SelectWorldCanvas.cs" />
+    <Compile Include="AsUI\UGUI\UGUI_Utils.cs" />
+    <Compile Include="Common\AsAttributes\LoadAttribute.cs" />
+    <Compile Include="Common\AsExtension\DictionaryExtension.cs" />
+    <Compile Include="Common\AsExtension\ListExtension.cs" />
+    <Compile Include="Common\AsExtension\StringExtension.cs" />
+    <Compile Include="Common\AsLoader\Entrance.cs" />
+    <Compile Include="Common\AsLoader\AttributeManager.cs" />
+    <Compile Include="Common\AsSerializable.cs" />
+    <Compile Include="Common\CommonMono.cs" />
+    <Compile Include="Common\EventCentre.cs" />
+    <Compile Include="Common\EventInventory.cs" />
+    <Compile Include="Common\FileUtility.cs" />
+    <Compile Include="Common\Log.cs" />
+    <Compile Include="Common\LogAct\FileWriter.cs" />
+    <Compile Include="Common\LogAct\IWriter.cs" />
+    <Compile Include="Common\LogAct\LogData.cs" />
+    <Compile Include="Common\LogAct\Logger.cs" />
+    <Compile Include="Common\LogAct\UIWriter.cs" />
+    <Compile Include="Common\PersistentGameObject.cs" />
+    <Compile Include="Common\Utility.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
